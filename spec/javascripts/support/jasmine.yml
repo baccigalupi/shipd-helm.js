@@ -11,9 +11,9 @@
 #   - dist/**/*.js
 #
 src_files:
+  - lib/shipd_helm/vendor/jquery*.js
   - lib/shipd_helm/vendor/underscore*.js
   - lib/shipd_helm/vendor/backbone*.js
-  - lib/shipd_helm/vendor/jquery*.js
   - lib/shipd_helm/**/*.js
 
 # stylesheets
