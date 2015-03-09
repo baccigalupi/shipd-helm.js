@@ -1,14 +1,14 @@
-describe('Helm.Overrides.RequestAuthorization', function() {
+describe('Helm.RequestMiddleware.RequestAuthorization', function() {
   var token, args;
 
   var transformedArguments = function (args) {
-    var authorizer = new Helm.Overrides.RequestAuthorization(args);
+    var authorizer = new Helm.RequestMiddleware.RequestAuthorization(args);
     return authorizer.perform();
   };
 
   beforeEach(function() {
     token = 'my-long-auth-token';
-    Helm.Overrides.RequestAuthorization.token = token
+    Helm.RequestMiddleware.RequestAuthorization.token = token
   });
 
   describe("GET requests", function() {
