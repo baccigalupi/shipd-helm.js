@@ -1,5 +1,6 @@
 describe('Helm.View', function() {
   var View, view;
+
   describe('event overrides', function() {
     beforeEach(function() {
       spyOn(Helm.Overrides.ClickEvent, 'shouldOverride').and.returnValue(true);
@@ -17,4 +18,6 @@ describe('Helm.View', function() {
       expect(view.events()).toEqual({'touchstart .thing': 'myMethod'});
     });
   });
+
+  
 });
